@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="./images/IconLogo.png" type="image/x-icon" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css"> -->
+    <title>2KHotel</title>
+</head>
+<body>
+      <div id="main">
+          <div class="slider">
+              <div class="slider-item fade">
+                  <img src="./images/slider1.jpg" alt="" class="slider-item-img">
+                  <div class="slider__description">
+                    <p><span style="font-weight: bold;font-size: 30px;">590.000<sup>đ</sup></span>/1 đêm</p>
+                    <p style="font-weight: bold;font-size: 40px;">Tận Hưởng Kỳ Nghỉ Tuyệt Vời Bên Gia Đình</p>
+                    <p>Tọa lạc tại vị trí đặc địa của thủ đô, view ra Hồ tây thơ mộng. Bạn sẽ thả hôn phiêu lãng mênh mông bồng bềnh theo gió mùa thu...</p>
+                    <button type="submit" class="slider__description-btn">Xem chi tiết</button>
+                  </div>
+              </div>
+              <div class="slider-item fade">
+                  <img src="./images/slider2.jpg" alt="" class="slider-item-img">
+                  <div class="slider__description">
+                    <p><span style="font-weight: bold;font-size: 30px;">1.050.000<sup>đ</sup></span>/1 đêm</p>
+                    <p style="font-weight: bold;font-size: 40px;">Vui chơi thả ga không lo về giá</p>
+                    <p>Tọa lạc ở một vị trí đắc địa tại Quận 1 của Thành phố Hồ Chí Minh, Lucky Star Hotel 266 De Tham...</p>
+                    <button type="submit" class="slider__description-btn">Xem chi tiết</button>
+                  </div>
+              </div>
+              <div class="slider-item fade">
+                  <img src="./images/slider3.jpg" alt="" class="slider-item-img">
+                  <div class="slider__description">
+                    <p><span style="font-weight: bold;font-size: 30px;">290.000<sup>đ</sup></span>/1 đêm</p>
+                    <p style="font-weight: bold;font-size: 40px;">Thỏa sức vui chơi không phải nghĩ</p>
+                    <p>Tọa lạc tại thành phố Đà Nẵng, cách Bãi biển Mỹ Khê 200 m, Sea Corner Boutique Hotel & Apartment cung cấp chỗ nghỉ bên bờ biển với...</p>
+                    <button type="submit" class="slider__description-btn">Xem chi tiết</button>
+                  </div>
+              </div>
+
+              <!------------- Navbar ----------->
+              <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="" class="navbar__logo-link">
+                        <img src="./images/LogoChuTim.png" alt="" class="navbar__logo-img">
+                    </a>
+                </div>
+
+                <ul class="navbar__list">
+                      <li class="navbar__list-item">
+                        <a href="" class="navbar__list-item-link">
+                            Khách sạn
+                        </a>
+                        <ul class="navbar__item-list">
+                            <li class="navbar__item-item">
+                              <a href="" class="navbar__item-item-link">Hà Nội</a>
+                            </li>
+                            <li class="navbar__item-item">
+                              <a href="" class="navbar__item-item-link">TP Hồ Chí Minh</a>
+                            </li>
+                            <li class="navbar__item-item">
+                              <a href="" class="navbar__item-item-link">Đà nẵng</a>
+                            </li>
+                            <li class="navbar__item-item">
+                              <a href="" class="navbar__item-item-link">Nha Trang</a>
+                            </li>
+                            <li class="navbar__item-item">
+                              <a href="" class="navbar__item-item-link">Phú Quốc</a>
+                            </li>
+                        </ul>
+                      </li>
+
+                      <li class="navbar__list-item navbar__list-item--separate">
+                        <a href="" class="navbar__list-item-link">
+                            Loại phòng
+                        </a>
+                            <ul class="navbar__item-list">
+                                <li class="navbar__item-item">
+                                    <a href="" class="navbar__item-item-link">Phòng đơn</a>
+                                </li>
+                                <li class="navbar__item-item">
+                                    <a href="" class="navbar__item-item-link">Phòng đôi</a>
+                                </li>
+                                <li class="navbar__item-item">
+                                    <a href="" class="navbar__item-item-link">Phòng VIP</a>
+                                </li>
+                          </ul> 
+                      </li>
+                      <li class="navbar__list-item">
+                        <a href="/logout.html" class="navbar__list-item-link">
+                            Đăng ký
+                        </a>
+                      </li>
+                      <li class="navbar__list-item">
+                        <a href="/login.html" class="navbar__list-item-link">
+                            Đăng nhập
+                        </a>
+                      </li>
+                </ul>
+                </nav>
+
+            <!--------------- Slider Search --------------->
+                <form action="" class="form__search">
+                <div class="form__search-forms">
+                    <div class="form__search-form">
+                        <i class="fas fa-map-marker-alt form__search-icon"></i>
+                        <input type="text" class="form__search-input" placeholder="Bạn muốn đi đâu">
+                        <div class="autobox">
+                            <li>Hà Nội</li>
+                            <li>Hải Phòng</li>
+                            <li>Hà Giang</li>
+                            <li>Nghệ An</li>
+                            <li>Phú Quốc</li>
+                            <li>Phú Thọ</li>
+                        </div>
+                    </div>
+                    <!-- thu vien flatpickr4 -->
+                    <div class="form__search-form">
+                        <i class="fas fa-calendar-alt form__search-icon"></i>
+                        <input id="dateInput" type="datetime-local" class="form__search-input" placeholder="Ngày đến">
+                    </div>
+                    <div class="form__search-form">
+                        <i class="fas fa-calendar-alt form__search-icon"></i>
+                        <input id="dateInput" type="datetime-local" class="form__search-input" placeholder="Ngày đi">
+                    </div>
+                    <div class="form__search-form">
+                        <i class="fas fa-user-check form__search-icon"></i>
+                        <input type="value" class="form__search-input" placeholder="Số người">
+                    </div>
+                    <div class="form__search-form">
+                        <button type="submit" class="form__search-btn">Tìm kiếm</button>
+                    </div>
+                </div>
+                </form>
+            
+            </div>
+
+          <div class="contain">
+            <div class="grid">
+                <div class="product">
+                    <h1 class="product-heading">
+                        Danh mục
+                    </h1>
+                </div>
+
+                    <!-- Product list -->
+                    <div class="grid__row">
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/132135745.webp?k=73e4c7c2916d93ddcd9841da0693bccce34a61182c6b6e315f5425d1442be679&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/298373162.webp?k=6a98e5d7123387bc5bf8b03af0bb3da6fed7814bcd659cad3600f5186fe4fd5c&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-10">
+                            <a href="/" class="product-body">
+                                <div class="product-body__img" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/square600/100583913.webp?k=1b781ba9e66724b60c1811978df211b5ff07aac14471e0069539cc346d87cec7&o=&s=1');"></div>
+                                <h3 class="product-body__heading">Phượng Danh Hotel</h3>
+                                <div class="product-body__main">             
+                                    <span class="product-body__des">Phòng đôi</span>
+                                    <div class="product-body__price">
+                                        <span class="product-body__price-current">260.000đ/</span>
+                                        <span class="product-body__price-day">1đêm</span>
+                                    </div>
+                                    <span class="product-body__location">97 Chuong Duong, Nguyen Van Cu Ward, Quy Nhơn, Việt Nam</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+            </div>
+          </div>
+
+          <footer class="footer">
+              <div class="grid">
+                  <div class="grid__row">
+                      <div class="grid__column-8">
+                          <div class="footer-body">
+                              <h3 class="footer-body__heading">2KHotel</h3>
+                              <span class="footer-body__des">Xa xa, đằng sau những ngọn núi chữ, xa những quốc gia Vokalia và Consonantia, có những văn tự mù mịt</span>
+                              <div class="footer-body__connection">
+                                  <a href="" class="footer-body__connection-link">
+                                      <i class="ti-twitter footer-body__connection-icon"></i>
+                                  </a>
+                                  <a href="" class="footer-body__connection-link">
+                                    <i class="ti-facebook footer-body__connection-icon"></i>
+                                </a>
+                                <a href="" class="footer-body__connection-link">
+                                    <i class="ti-instagram footer-body__connection-icon"></i>
+                                </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="grid__column-8">
+                        <div class="footer-body">
+                            <h3 class="footer-body__heading">Thông tin</h3>
+                            <div class="footer-body__infor">
+                                <a href="" class="footer-body__infor-link">Dịch vụ</a>
+                                <a href="" class="footer-body__infor-link">Các điều khoản và điều kiện</a>
+                                <a href="" class="footer-body__infor-link">Trở thành đối tác</a>
+                                <a href="" class="footer-body__infor-link">Đảm bảo giá tốt nhất</a>
+                                <a href="" class="footer-body__infor-link">Quyền riêng tư và chính sách</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-8">
+                        <div class="footer-body">
+                            <h3 class="footer-body__heading">Hổ trợ khách hàng</h3>
+                            <div class="footer-body__infor">
+                                <a href="" class="footer-body__infor-link">FAQ</a>
+                                <a href="" class="footer-body__infor-link">Phương thức thanh toán</a>
+                                <a href="" class="footer-body__infor-link">Mẹo đặt phòng</a>
+                                <a href="" class="footer-body__infor-link">Liên hệ với chúng tôi</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__column-8">
+                        <div class="footer-body">
+                            <h3 class="footer-body__heading">Câu hỏi?</h3>
+                            <div class="footer-body__question">
+                                <i class="ti-location-pin footer-body__question-icon"></i>
+                                <span class="">203 Fake St. Mountain View, San Francisco, California, USA</span>
+                            </div>
+                            <div class="footer-body__question">
+                                <i class="fas fa-phone-alt footer-body__question-icon"></i>
+                                <span class="">+84 359 118 433</span>
+                            </div>
+                            <div class="footer-body__question">
+                                <i class="fas fa-envelope footer-body__question-icon"></i>
+                                <span class="">19130105@st.hcmuaf.edu.vn</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+              </div>
+          </footer>
+          
+      </div>
+
+
+
+<!-------------- MODAL --------------->
+      <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__container"> -->
+
+            <!-- Register-Form -->
+            <!-- <div class="modal__body">
+                <div class="modal__body-form-container">
+                    <div class="modal__body-header">
+                        <h3 class="modal__body-header-text">Đăng ký</h3>
+                   </div>
+                   <div class="modal__body-form">
+                      <div class="modal__body-form-input">
+                          <input type="email" name="" id="" placeholder="Email của bạn" class="modal__body-form-btn">
+                     </div>
+                      <div class="modal__body-form-input">
+                           <input type="password" name="" id="" placeholder="Mật khẩu của bạn" class="modal__body-form-btn">
+                      </div>
+                      <div class="modal__body-form-input">
+                          <input type="password" name="" id="" placeholder="Nhập lại mật khẩu" class="modal__body-form-btn">
+                      </div>
+                    </div>
+                    <div class="modal__body-policy">
+                        <p class="modal__body-policy-text">
+                             Bằng việc đăng kí, bạn đã đồng ý với 2KHotel về
+                          <a href="" class="modal__body-policy-link">Điều khoản dịch vụ</a> &
+                          <a href="" class="modal__body-policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="modal__body-control">
+                          <button type="submit" class="modal__body-control-btn--reg">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                <div class="modal__body-connection">
+                    <button type="submit" class="modal__body-connection-btn modal__body-connection-btn--facebook">
+                        <div class="modal__body-connection-link">
+                            <i class="fab fa-facebook modal__body-connection-icon"></i>
+                        </div>
+                            <span class="modal__body-connection-text">Kết nối với Facebook</span>
+                    </button>
+                    <button type="submit" class="modal__body-connection-btn modal__body-connection-btn--google">
+                        <div class="modal__body-connection-link">
+                           <i class="fab fa-google modal__body-connection-icon"></i>
+                        </div>
+                           <span class="modal__body-connection-text">Kết nối với Google</span>
+                    </button>
+                </div>
+            </div> -->
+
+            <!-- Login-Form -->
+            <!-- <div class="modal__body">
+                <div class="modal__body-form-container">
+                    <div class="modal__body-header">
+                        <h3 class="modal__body-header-text">Đăng nhập</h3>
+                   </div>
+                   <div class="modal__body-form">
+                      <div class="modal__body-form-input">
+                          <input type="email" name="" id="" placeholder="Email của bạn" class="modal__body-form-btn">
+                     </div>
+                      <div class="modal__body-form-input">
+                           <input type="password" name="" id="" placeholder="Mật khẩu của bạn" class="modal__body-form-btn">
+                      </div>
+                      <div class="modal__body-form-input">
+                          <input type="password" name="" id="" placeholder="Nhập lại mật khẩu" class="modal__body-form-btn">
+                      </div>
+                    </div>
+                    <div class="modal__body-policy">
+                        <p class="modal__body-policy-text">
+                             Bằng việc đăng kí, bạn đã đồng ý với 2KHotel về
+                          <a href="" class="modal__body-policy-link">Điều khoản dịch vụ</a> &
+                          <a href="" class="modal__body-policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="modal__body-control">
+                      <button type="submit" class="modal__body-control-btn--reg">ĐĂNG NHẬP</button>
+                    </div>
+                  </div>
+                <div class="modal__body-connection">
+                    <button type="submit" class="modal__body-connection-btn modal__body-connection-btn--facebook">
+                        <div class="modal__body-connection-link">
+                            <i class="fab fa-facebook modal__body-connection-icon"></i>
+                        </div>
+                            <span class="modal__body-connection-text">Kết nối với Facebook</span>
+                    </button>
+                    <button type="submit" class="modal__body-connection-btn modal__body-connection-btn--google">
+                        <div class="modal__body-connection-link">
+                           <i class="fab fa-google modal__body-connection-icon"></i>
+                        </div>
+                           <span class="modal__body-connection-text">Kết nối với Google</span>
+                    </button>
+                </div>
+            </div> -->
+
+        <!-- </div>
+      </div> -->
+
+
+
+
+<!------------------ JS ---------------->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- JS Slider -->
+    <script>
+        //khai báo biến slideIndex đại diện cho slide hiện tại
+        var slideIndex;
+        // KHai bào hàm hiển thị slide
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slider-item");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+       
+            slides[slideIndex].style.display = "block";  
+            //chuyển đến slide tiếp theo
+            slideIndex++;
+            //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+            if (slideIndex > slides.length - 1) {
+              slideIndex = 0
+            }    
+            //tự động chuyển đổi slide sau 5s
+            setTimeout(showSlides, 5000);
+        }
+        //mặc định hiển thị slide đầu tiên 
+        showSlides(slideIndex = 0);
+       
+       
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+    </script>
+
+<!-- JS Navbar -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"> </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()) {
+                    $('.navbar').addClass('sticky');
+                }
+                else {
+                    $('.navbar').removeClass('sticky');
+                }
+            })
+        })
+    </script>
+
+<!-- JS Form Search -->
+    <script>
+        const inputSearch = document.querySelector(".form__search-input");
+        const autoBox = document.querySelector(".autobox")
+        inputSearch.onkeyup = (e) => {
+            let checkData = e.target.value
+            let dataArray = []
+            if(checkData) {
+                dataArray = recomentlist.filter((data) => {
+                    return data.toLocaleLowerCase().startsWith(checkData.toLocaleLowerCase())
+                })
+                dataArray = dataArray.map((data) => {
+                    return data ='<li>' + data + '</li>'
+                })
+                autoBox.classList.add('active')
+                showAddress (dataArray)
+                let liItem = autoBox.querySelectorAll("li")
+                for (let i = 0; i < liItem.length; i++){
+                    liItem[i].addEventListener("click", function(){
+                        inputSearch.value = liItem[i].innerHTML
+                        autoBox.classList.remove('active')
+                    })
+                }
+            }
+            else {
+                autoBox.classList.remove('active')
+            }
+        }
+        function showAddress (list) {
+            let listData
+            if(!list.length) {
+                listData ='<li>' + inputSearch.value + '</li>'
+            }
+            else {
+                listData = list.join('')
+            }
+            autoBox.innerHTML = listData
+        }
+
+        let recomentlist = [
+            "Hà Nội",
+            "Hải Phòng",
+            "Hà Giang",
+            "Hà Tĩnh",
+            "Hồ Chí Minh",
+            "Nghệ An",
+            "Phú Quốc",
+            "Phú Thọ",
+            "Nha Trang",
+            "Quảng Bình",
+            "Quảng Trị",
+            "Quảng Nam",
+            "Đà Nẵng",
+            "Đà Lạt",
+        ]
+    </script>
+
+<!-- JS Form Date -->
+    <script>
+        flatpickr("#dateInput", {});
+    </script>
+
+</body>
+</html>

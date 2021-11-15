@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/logout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="./images/IconLogo.png" type="image/x-icon" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css"> -->
+    <title>2KHotel</title>
+</head>
+<body>
+    <header class="header-login">
+        <a href="" class="navbar__logo-link">
+            <img src="./images/LogoChuTim.png" alt="" class="navbar__logo-img--login">
+        </a>
+    </header>
+
+        <div class="container" id="container">
+            <form action="#" class="form-container sign-in-container">
+                <h1 class="sign-in__heading">Đăng nhập</h1>
+                <div class="form-body">
+                    <input class="form-body__input" type="email" placeholder="Email của bạn" required=""/>
+                    <input class="form-body__input" type="password" placeholder="Mật khẩu của bạn" required=""/>
+                </div>   
+                <a href="#" style="color: rgb(80, 6, 229)">Quên mật khẩu?</a>
+                <button class="login-btn" type="submit" style="cursor: pointer;">ĐĂNG NHẬP</button>
+            </form>
+            <form action="#" class="form-container sign-up-container">
+                <h1 class="sign-up__heading sign-in__heading">Đăng ký</h1>
+                <div class="form-body">
+                    <input class="form-body__input" type="text" placeholder="Nhập địa chỉ email" required=""/>
+                    <input class="form-body__input" type="email" placeholder="Nhập mật khẩu" required=""/>
+                    <input class="form-body__input" type="password" placeholder="Nhập lại mật khẩu" required=""/>
+                </div>
+                <button class="logout-btn login-btn" type="submit">Đăng ký</button>
+            </form>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="overlay-heading">Xin chào!</h1>                       
+                        <p>Chào mừng bạn đến với trang website của chúng tôi</p>
+                        <button class="ghost ghost-btn--notify" id="signIn">Đăng ký</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="overlay-heading">Chào mừng trở lại!</h1>
+                        <p>Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+                        <button class="ghost ghost-btn--notify" id="signUp">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+    </script>
+</body>
+</html>
